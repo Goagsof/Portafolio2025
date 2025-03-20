@@ -1,0 +1,220 @@
+/* results.css */
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos generales */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    color: #202124;
+  }
+  
+  /* Barra de navegación */
+  .navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #dfe1e5;
+  }
+  
+  .logo-small {
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: -2px;
+    margin-right: 20px;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 800px; /* Barra de búsqueda más larga */
+  }
+  
+  .search-bar-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+  }
+  
+  .search-bar {
+    width: 100%;
+    padding: 10px 50px 10px 20px; /* Espacio para los iconos */
+    font-size: 16px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    outline: none;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  }
+  
+  .search-icons {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .search-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  
+  .search-icon:hover {
+    opacity: 0.8;
+  }
+  
+  .navbar-icons {
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+  }
+  
+  .icon-link {
+    display: inline-block;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .icon-link:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .icon-img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+  }
+  
+  /* Opciones de filtro */
+  .filter-options {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #dfe1e5;
+    margin-left: 160px; /* Alineación debajo del buscador */
+    max-width: 700px; /* Limita el ancho */
+  }
+  
+  .filter-link {
+    font-size: 14px;
+    color: #5f6368;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .filter-link.active {
+    color: #1a73e8;
+    border-bottom: 3px solid #1a73e8;
+  }
+  
+  .filter-link.tools {
+    margin-left: auto;
+  }
+  
+  /* Resultados de búsqueda */
+  .results-container {
+    max-width: 700px;
+    margin: 20px 0 20px 160px; /* Alineación debajo del buscador */
+    padding: 0 20px;
+  }
+  
+  .result {
+    margin-bottom: 30px;
+  }
+  
+  .result-title {
+    font-size: 20px;
+    color: #1a0dab;
+    text-decoration: none;
+  }
+  
+  .result-title:hover {
+    text-decoration: underline;
+  }
+  
+  .result-url {
+    font-size: 14px;
+    color: #0d652d;
+    margin: 5px 0;
+  }
+  
+  .result-description {
+    font-size: 14px;
+    color: #4d5156;
+    line-height: 1.5; /* Mejora la legibilidad */
+  }
+  
+  .result-description a {
+    color: #1a0dab;
+    text-decoration: none;
+  }
+  
+  .result-description a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Paginación */
+  .pagination {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0 40px 160px; /* Alineación debajo del buscador */
+  }
+  
+  .google-logo-pagination {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .pagination-numbers {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .page-number {
+    font-size: 14px;
+    color: #1a0dab;
+    text-decoration: none;
+  }
+  
+  .page-number.next {
+    margin-left: 20px;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #f2f2f2;
+    padding: 15px 20px;
+    border-top: 1px solid #dfe1e5;
+    margin-left: 0; /* Pegado a la izquierda */
+  }
+  
+  .footer-location {
+    font-size: 14px;
+    color: #70757a;
+    margin-bottom: 10px;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer-link {
+    font-size: 14px;
+    color: #70757a;
+    text-decoration: none;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
